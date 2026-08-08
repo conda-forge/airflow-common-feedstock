@@ -1,6 +1,6 @@
 context:
   name: airflow-common
-  version: "0.7.8"
+  version: "0.7.9"
   python_min: '3.11'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-common/airflow_common-${{ version }}.tar.gz
-  sha256: c32c01e6c3eb1e05f2c6b54d7e45f5d02b744fe017c0107580a634e557e869e8
+  sha256: 9d6e324218be87e22bf2576cb4960b3c42cf3d6870c27ebc6fb0345400c79a00
 
 build:
   number: 0
