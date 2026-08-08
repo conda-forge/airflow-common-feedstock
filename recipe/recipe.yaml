@@ -23,7 +23,7 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - airflow-pydantic >=1.4,<1.6
+    - airflow-pydantic >=1.6,<1.7
     - pydantic >=2
 
 tests:
@@ -31,7 +31,9 @@ tests:
       imports:
         - airflow_common
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   license: Apache-2.0
