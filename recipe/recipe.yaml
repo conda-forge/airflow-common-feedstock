@@ -1,7 +1,6 @@
 context:
   name: airflow-common
-  version: "0.7.9"
-  python_min: '3.11'
+  version: "0.7.10"
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-common/airflow_common-${{ version }}.tar.gz
-  sha256: 9d6e324218be87e22bf2576cb4960b3c42cf3d6870c27ebc6fb0345400c79a00
+  sha256: c9e40863b6f0c38909f01f7e97cc58d4e601937dca69c7f2e012cf705e66f9ef
 
 build:
   number: 0
@@ -23,7 +22,7 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - airflow-pydantic >=1.6,<1.7
+    - airflow-pydantic >=1.6,<1.8
     - pydantic >=2
 
 tests:
