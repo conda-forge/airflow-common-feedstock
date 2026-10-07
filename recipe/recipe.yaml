@@ -1,7 +1,6 @@
 context:
   name: airflow-common
   version: "0.7.10"
-  python_min: '3.11'
 
 package:
   name: ${{ name|lower }}
